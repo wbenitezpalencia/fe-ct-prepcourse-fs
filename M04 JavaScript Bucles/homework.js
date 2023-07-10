@@ -5,13 +5,13 @@ function obtenerMayor(x, y) {
    // Retornar el número más grande.
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
-if (x > y) {
-   return x;
-} else if (x < y) {
-   return y; 
-} else {
-   return x || y;
-}
+   if(x > y) {
+      return x;
+   } else if(x < y) {
+      return y;
+   } else {
+      return x||y;
+   }
 }
 
 function mayoriaDeEdad(edad) {
@@ -73,17 +73,16 @@ function colors(color) {
    // IMPORTANTE: utilizar el statement SWITCH.
    // Tu código:
    switch (color) {
-      case "blue": {
+      case "blue":
          return "This is blue";
-      } case "red": {
+      case "red":
          return "This is red";
-      } case "green": {
+      case "green":
          return "This is green";
-      } case "orange": {
-         return "This orange";
-      } default: {
+      case "orange":
+         return "This is orange";
+      default:
          return "Color not found";
-      }
    }
 }
 
@@ -168,26 +167,26 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-  if (num === 2) {
-   return true;
-  } else if (num < 2) {
-   return false;
-  } for (var i = 2; i < num; i++) {
-   if (num % i == 0) {
+   if (num === 2) {
+      return true;
+     } else if (num < 2) {
       return false;
-   }
-  }
-  return true;
+     } for (var i = 2; i < num; i++) {
+      if (num % i == 0) {
+         return false;
+      }
+     }
+     return true;
 }
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   if (num === true) {
+   if (valor === true) {
       return "Soy verdadero";
    } else {
-      return "Soy falso;"
+      return "Soy falso";
    }
 }
 
@@ -207,15 +206,13 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-   var contador = 0;
-   var resultado = 7;
+   var i = 0
+   var a = num
    do {
-      resultado += 5;
-      contador -= 1;
-   }
-   while (contador !== 0) {
-      return numero + resultado;
-   }
+      i = i + 1;
+      a = a + 5;
+   } while (i < 8);
+   return a;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
